@@ -1,11 +1,40 @@
 ---
-title: "my_website"
+title: "Hi!"
+pagetitle: "Lucas Watson"
+description-meta: "Lucas Watson is a Ph.D. student at Kansas State University studying dynamic human decision-making from a behavioral and ecological perspective."
+main-photo: /files/photos/profile_photo.jpeg
+main-photo-square: /files/photos/profile_photo_square.jpeg
+title-block-banner: "#CF4446"
+format:
+  html:
+    quarto-template-params:
+      banner-header-class: "home"
 ---
 
-This is a Quarto website.
+::: {.grid}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: {.g-col-12 .g-col-sm-4}
 
-```{r}
-1 + 1
+```{=html}
+<div class="grid" style="--bs-columns: 5; row-gap: 0;">
+  <div class="g-col-1 g-col-sm-0"></div>
+  <div class="g-col-3 g-col-sm-5">
+    <picture>
+      <source media="(max-width: 576px)" srcset="{{< meta main-photo-square >}}">
+      <source media="(min-width: 576px)" srcset="{{< meta main-photo >}}">
+      <img class="img-fluid" src="{{< meta main-photo >}}" alt="{{< meta author-meta >}}">
+    </picture>
+  </div>
+  <div class="g-col-1 g-col-sm-0"></div>
+</div>
 ```
+
+:::
+
+::: {.g-col-12 .g-col-sm-8}
+
+I'm currently a third year Ph.D. student at Kansas State University studying human decision making through the lens of foraging ecology. I make and play video games to learn about human cognition. Using games and foraging inspired designs, I hope to enhance decision-making research by making studies more ecologically valid, complex, and engaging for participants. Through careful planning and analysis, I hope to not completely mislead myself in the process! 
+
+:::
+
+:::

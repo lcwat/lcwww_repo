@@ -1,14 +1,26 @@
+# settings for website
 project:
   type: website
+  
+  preview: 
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+  
   output-dir: docs
 
 website:
-  title: "my_website"
+  title: "Lucas Watson"
+  # favicon: "/files/photos/my_favicon.png"
+  
+  
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: About
+      - href: research.qmd
+        text: Research
 
 format:
   html:
