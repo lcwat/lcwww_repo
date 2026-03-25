@@ -10,25 +10,56 @@ project:
   
   output-dir: docs
 
+# metadata stuff
+pagetitle: "{{< meta title >}} | Lucas Watson"
+author-meta: "Lucas Watson"
+
 website:
   title: "Lucas Watson"
-  # favicon: "/files/photos/my_favicon.png"
+  # favicon: "/files/my_favicon.png"
   
   
   navbar:
+    pinned: true
+
     left:
       - href: index.qmd
         text: About
-      - href: research.qmd
+      - href: research/index.qmd
         text: Research
+      - href: supp_materials/index.qmd
+        text: Supplemental Materials
+    
+    right:
+      - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
+        href: "mailto:lcwatson@ksu.edu"
+      - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
+        href: https://github.com/lcwat
+        rel: me
+    
+  page-footer:
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Lucas Watson</span>
+      <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>      
+    center: |
+      <span class="faux-block">{{< fa brands orcid >}} <strong>ORCID</strong> [{{< var orcid >}}](https://orcid.org/{{< var orcid >}})</span>
+    right: |
+      <span class="faux-block">Remixed with {{< fa brands r-project >}} and [Quarto](https://quarto.org/) from [Andrew Heiss' website](https://www.andrewheiss.com/)</span>
+      <span class="faux-block">[View Dr. Heiss' source at {{< fa brands github >}} GitHub]({{< var github-url >}})</span>
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
-    toc: true
+    theme: 
+      - html/lcwww_styles.scss
+    grid: 
+      body-width: 900px
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
 
 
 

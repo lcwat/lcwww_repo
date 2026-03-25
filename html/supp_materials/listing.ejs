@@ -1,0 +1,40 @@
+```{=html}
+
+<div class="supplemental-materials">
+    <% for (const entry of items) { %>
+        <div class="project-entry">
+            <div class="metadata">
+                <p class="date">
+                    <%= entry.date %>
+                </p>
+            </div>
+            <div class="body">
+                <p class="title">
+                    <%= entry.title %>
+                </p>
+                <p class="description">
+                    <%= entry.description %> | <%= entry.location %>
+                </p>
+
+                <% if (entry.links) { %>
+                    <ul class="talk-links">
+                        <% for (const link of entry.links) { %>
+                            <li class="talk-link">
+                                <% if (link.local) { %>
+                                    <a
+                                        href="<%- entry.path.substring(0, entry.path.lastIndexOf('/')) %>/<%- link.url %>">
+                                        <% } else { %>
+                                            <a href="<%- link.url %>">
+                                                <% } %>
+                                                    <i class="<%- link.icon %>"></i>
+                                                    <%= link.name %>
+                                            </a>
+                            </li>
+                            <% } %>
+                                <% } %>
+                    </ul>
+            </div>
+        </div>
+        <% } %>
+</div>
+```

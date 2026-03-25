@@ -1,10 +1,10 @@
 ---
-title: "Hi!"
+title: "Hello"
 pagetitle: "Lucas Watson"
 description-meta: "Lucas Watson is a Ph.D. student at Kansas State University studying dynamic human decision-making from a behavioral and ecological perspective."
-main-photo: /files/photos/profile_photo.jpeg
-main-photo-square: /files/photos/profile_photo_square.jpeg
-title-block-banner: "#CF4446"
+main-photo: /files/photos/profile_photo2.jpeg
+main-photo-square: /files/photos/profile_photo2_square.jpeg
+title-block-banner: "#cdd99a"
 format:
   html:
     quarto-template-params:
@@ -33,7 +33,7 @@ format:
 
 ::: {.g-col-12 .g-col-sm-8}
 
-I'm currently a third year Ph.D. student at Kansas State University studying human decision making through the lens of foraging ecology. I make and play video games to learn about human cognition. Using games and foraging inspired designs, I hope to enhance decision-making research by making studies more ecologically valid, complex, and engaging for participants. Through careful planning and analysis, I hope to not completely mislead myself in the process! 
+I'm currently a third year Ph.D. student at Kansas State University studying human decision making through the lens of foraging ecology. I make and play video games to learn about human cognition. Using foraging-inspired games, I hope to enhance decision-making research by making studies more ecologically valid for researchers and engaging for participants. Through careful planning and analysis, I hope to not completely mislead myself in the process! 
 
 :::
 

@@ -1,0 +1,16 @@
+---
+title: "Research"
+listing:
+  - id: reviews
+    contents: "reviews/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+page-layout: full
+include-back-link: false
+toc-location: right
+---
+
+## Reviews
+
+:::{#reviews}
+:::

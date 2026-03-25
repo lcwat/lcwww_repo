@@ -1,0 +1,12 @@
+- title: "NEEPS Poster"
+  date: 2026-04-02
+  description: "Efficient exploitation: Exploring human behavior in a replenishing foraging scenario"
+  location: Pittsburgh, PA
+  links:
+  - name: Materials
+    url: #place link here
+    icon: fa-solid fa-up-right-from-square
+  # github info if applicable for future projects
+  # - name: GitHub repository
+  #   url: https://github.com/andrewheiss/2026-02-17_northwestern-targets
+  #   icon: fa-brands fa-github

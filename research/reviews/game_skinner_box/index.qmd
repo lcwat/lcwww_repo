@@ -1,0 +1,61 @@
+---
+title: "Video game engines as the new virtual Skinner box"
+date: 2026-01-08
+author:
+  - name: Michael E. Young
+    affiliation: Office of the Provost, Baylor Univerisity
+  - name: Patrick M. Hancock
+    affiliation: Department of Psychological Sciences, Kansas State University
+  - name: Lucas Watson
+    orcid: 0009-0002-0637-4612
+    affiliation: Department of Psychological Sciences, Kansas State University
+  - name: Brian Howatt
+    orcid: 0000-0001-9195-4712
+    affiliation: Department of Psychological Sciences, Kansas State University
+  - name: Robert Southern
+    orcid: 0009-0000-9903-5729
+    affiliation: Department of Psychological Sciences, Kansas State University
+  - name: Karissa Payne
+    affiliation: Department of Psychological Sciences, Kansas State University 
+categories: 
+  - Video games
+  - Behavior
+pub-info:
+  reference: >-
+    Michael E. Young, Patrick M. Hancock, <strong>Lucas Watson</strong>, Brian Howatt, Robert Southern, and Karissa Payne (January 2026). Video game engines as the new virtual Skinner box, <em>Journal of the Experimental Analysis of Behavior, 125</em>(1), e70081. doi: <a href="https://doi.org/10.1002/jeab.70081" target="_blank" rel="noopener noreferrer"><code>10.1002/jeab.70081.70081</code></a>.
+  links:
+  - name: Preprint (PDF)
+    url: young_et_al_2026_skinner_box.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
+  - name: Final version
+    url: https://doi.org/10.1002/jeab.70081
+    icon: fa-solid fa-scroll
+  - name: Add to Zotero
+    url: https://www.zotero.org/save?type=doi&q=10.1002/jeab.70081
+    icon: ai ai-zotero
+doi: 10.1002/jeab.70081
+---
+
+## Citation
+
+<p class="buttons" style="text-align:center;">
+<a class="btn btn-danger" target="_blank" href="https://www.zotero.org/save?type=doi&q=10.1002/jeab.70081">{{< ai zotero >}}&emsp;Add to Zotero {{< fa square-arrow-up-right >}}</a>
+</p>
+
+```bibtex
+@article{https://doi.org/10.1002/jeab.70081,
+author = {Young, Michael E. and Hancock, Patrick M. and Watson, Lucas and Howatt, Brian and Southern, Robert and Payne, Karissa},
+title = {Video game engines as the new “virtual” Skinner box},
+journal = {Journal of the Experimental Analysis of Behavior},
+volume = {125},
+number = {1},
+pages = {e70081},
+keywords = {behavioral variability, generalizability, Skinner box, video game},
+doi = {https://doi.org/10.1002/jeab.70081},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jeab.70081},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/jeab.70081},
+abstract = {Abstract The Skinner box has provided a standardized method of conducting experiments on operant behavior throughout the history of behavior analysis. As technology has advanced, these operant chambers have become increasingly complex to allow for the study of new stimuli, behavior, and outcomes. The present article takes this variability one step further by advocating for the use of video game engines in the study of operant behavior in humans. Game engines provide high levels of flexibility, control, and realism as well as continuous behavioral tracking, dynamic stimulus presentation, and complex reinforcement schedules that greatly expand the range of research questions that can be addressed. Importantly, the potential for increasing stimulus, response, and outcome variability provides the basis for assessing and maximizing the generalizability of operant and related principles. This article illustrates the use of video game engines to study causal inference, delay discounting, loot boxes, foraging, and multiplayer dynamics. Adopting game engines in behavioral research not only expands the scope of behavior analysis but also increases its relevance to real-world behavior, offering a promising path forward for innovation.},
+year = {2026}
+}
+```

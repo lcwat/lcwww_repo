@@ -1,0 +1,28 @@
+---
+title: "Supplemental Materials"
+listing:
+  - id: sm_2026
+    contents: sm_2026.yml
+    sort: "date desc"
+    template: ../html/supp_materials/listing.ejs
+
+title-block-banner: "#118230"
+page-layout: full
+toc: true
+toc-location: right
+toc-title: Year
+date-format: "MMMM D, YYYY"
+---
+
+This page contains the supplemental materials for projects that I've worked on.
+
+::: {.callout-note}
+### Copyright
+
+Except where noted, all content is © Lucas Watson and licensed under [Creative Commons](https://creativecommons.org/licenses/by-sa/4.0/).
+:::
+
+## 2026
+
+:::{#sm_2026}
+:::
