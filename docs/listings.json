@@ -1,12 +1,12 @@
 [
   {
-    "listing": "/supp_materials/index.html",
-    "items": []
-  },
-  {
     "listing": "/research/index.html",
     "items": [
       "/research/reviews/game_skinner_box/index.html"
     ]
+  },
+  {
+    "listing": "/supp_materials/index.html",
+    "items": []
   }
 ]
