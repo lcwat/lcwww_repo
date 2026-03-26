@@ -1,6 +1,6 @@
 ---
 title: Games
-description: "Lucas Watson's games"
+description-meta: "Lucas Watson's CV"
 title-block-banner: "#363b45"
 ---
 

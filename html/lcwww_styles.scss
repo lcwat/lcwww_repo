@@ -83,6 +83,13 @@ body {
     }
 }
 
+.sm {
+    .quarto-title-banner {
+      background-image: none;
+      background-color: $light-green;
+    }
+}
+
 .home {
     .quarto-title-banner {
         margin-bottom: 0;

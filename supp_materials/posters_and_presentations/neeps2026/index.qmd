@@ -1,0 +1,18 @@
+---
+title: "NEEPS poster supplemental materials"
+pagetitle: "Supplemental materials markdown for my poster at the 2026Northeastern Evolutionary Psychological Society conference"
+description-meta: "Lucas Watson is a Ph.D. student at Kansas State University studying dynamic human decision-making from a behavioral and ecological perspective."
+title-block-banner: "#cdd99a"
+format:
+  html:
+    quarto-template-params:
+      banner-header-class: "sm"
+---
+
+## Game
+
+Here is a video of gameplay you can view.
+
+## Model
+
+Here is where you can view more detail of the final model I summarized on the poster. 
