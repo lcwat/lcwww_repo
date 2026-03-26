@@ -1,5 +1,5 @@
 ---
-title: "Hello"
+title: "Hello!"
 pagetitle: "Lucas Watson"
 description-meta: "Lucas Watson is a Ph.D. student at Kansas State University studying dynamic human decision-making from a behavioral and ecological perspective."
 main-photo: /files/photos/profile_photo2.jpeg

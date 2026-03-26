@@ -8,6 +8,14 @@ project:
     watch-inputs: true
     navigate: true
   
+  render:
+  - "*.qmd"
+  - "*.md"
+
+  resources:
+  - "files/**"
+  - "etc/**"
+  
   output-dir: docs
 
 # metadata stuff
