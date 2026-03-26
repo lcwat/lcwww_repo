@@ -2,8 +2,6 @@
 title: "Hi, I'm Lucas"
 pagetitle: "Lucas Watson"
 description-meta: "Lucas Watson is a Ph.D. student at Kansas State University studying dynamic human decision-making from a behavioral and ecological perspective."
-main-photo: /files/photos/profile_photo.jpeg
-main-photo-square: /files/photos/profile_photo_square.jpeg
 title-block-banner: "#cdd99a"
 format:
   html:
@@ -20,9 +18,9 @@ format:
   <div class="g-col-1 g-col-sm-0"></div>
   <div class="g-col-3 g-col-sm-5">
     <picture>
-      <source media="(max-width: 576px)" srcset="{{< meta main-photo-square >}}">
-      <source media="(min-width: 576px)" srcset="{{< meta main-photo >}}">
-      <img class="img-fluid" src="{{< meta main-photo >}}" alt="{{< meta author-meta >}}">
+      <source media="(max-width: 576px)" srcset="files/photos/profile_photo_square.jpeg">
+      <source media="(min-width: 576px)" srcset="files/photos/profile_photo.jpeg">
+      <img class="img-fluid" src="files/photos/profile_photo.jpeg" alt="{{< meta author-meta >}}">
     </picture>
   </div>
   <div class="g-col-1 g-col-sm-0"></div>

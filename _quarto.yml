@@ -37,6 +37,10 @@ website:
         text: Research
       - href: supp_materials/index.qmd
         text: Supplemental Materials
+      - href: cv/index.qmd
+        text: CV
+      - href: games/index.qmd
+        text: Games
     
     right:
       - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
