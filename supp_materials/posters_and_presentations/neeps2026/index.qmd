@@ -7,6 +7,14 @@ format:
   html:
     quarto-template-params:
       banner-header-class: "sm"
+    code-fold: true
+    fig-cap-location: bottom
+    shift-heading-level-by: 1
+resources: 
+  - "b4.1.rds"
+execute: 
+  echo: false
+  warning: false
 ---
 
 ## Game
@@ -22,3 +30,113 @@ Check out how data are tracked in real time.
 ## Model
 
 Here is where you can view more detail of the final model I summarized on the poster. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = "center", fig.retina = 3,
+                      fig.width = 6, fig.height = 6,
+                      out.width = "85%", collapse = TRUE,
+                      dev = "png", dev.args = list(type = "cairo-png"))
+
+options(digits = 3, width = 120,
+        dplyr.summarise.inform = FALSE,
+        knitr.kable.NA = "")
+```
+
+Model fit with the brms package in R version 4.5.1. Visualization were completed using the ggplot2, tidybayes, bayesplot, and marginaleffects packages. 
+
+```{r}
+
+# load libraries
+library(tidyverse)
+library(tidybayes)
+library(brms)
+library(bayesplot)
+library(marginaleffects)
+
+# source plot theme
+source('project_theme.R')
+
+# load model and data
+performance_and_rmi <- read_csv('agg_summary_data.csv')
+
+b4.1 <- read_rds('b4.1.rds')
+
+```
+
+Here is the model summary.
+
+```{r}
+print(b4.1)
+```
+
+Beta posteriors were shown on the poster, and variance posteriors for each groups' random effect offsets are shown below.
+
+```{r}
+as_draws_df(b4.1) |> 
+  select(starts_with('sd_')) |> 
+  set_names(str_c("sigma[", c('level[intercept]', 'level[rmi]', 'level[time]', 'level[ixn]', 'subject[intercept]', 'subject[rmi]', 'subject[time]', 'subject[ixn]'), "]")) |> 
+  pivot_longer(everything()) |> 
+  
+  # plot
+  ggplot(
+    aes(x = value, y = fct_reorder(name, value))
+  ) +
+  stat_halfeye(fill = clrs[2]) +
+  scale_y_discrete(labels = ggplot2:::parse_safe) +
+  xlim(0, NA) +
+  labs(y = 'parameter') +
+  project_theme()
+```
+
+Here is how model predicted relationships varied by subject.
+
+```{r fig_height = 8}
+# now subject spaghetti
+predictions(
+  b4.1, 
+  newdata = datagrid(
+    s_rmi = seq(min(performance_and_rmi$s_rmi), max(performance_and_rmi$s_rmi), length.out = 20), 
+    s_time_in_game = 0, 
+    level = 1:10, 
+    subject = unique(performance_and_rmi$subject)
+  ), 
+  re_formula = NULL, # use everything
+  vcov = F
+) |> 
+  ggplot(aes(x = s_rmi, y = estimate, color = as.factor(subject))) +
+  
+  # plot spaghetti
+  geom_line(
+    linewidth = .3, alpha = .4
+  ) + 
+  
+  scale_x_continuous(n.breaks = 10, labels = seq(0, 1, .1)) +
+  scale_color_viridis_d(guide = 'none', option = 'magma') +
+  
+  project_theme() +
+  
+  labs(x = 'RMI', y = 'Time (s)') +
+  
+  theme(
+    axis.text.x = element_text(size = 8, angle = 90)
+  ) +
+  
+  facet_wrap(~ level)
+```
+
+Here is a posterior predictive check to validate the model fit.
+
+```{r fig_height=8}
+yrep <- posterior_predict(b4.1, ndraws = 500)
+
+ppc_dens_overlay_grouped(
+  performance_and_rmi$true_time, yrep[sample(1:500, 50),], group = performance_and_rmi$level
+) + 
+  project_theme() + 
+  scale_color_manual(values = c(clrs[1], clrs[3])) +
+  theme(axis.text = element_text(size = 7)) + 
+  labs(
+    caption = 'y are the observed data and yrep are the model predicted data for 50 posterior draws'
+  )
+  
+```
