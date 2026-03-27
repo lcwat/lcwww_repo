@@ -11,7 +11,13 @@ format:
 
 ## Game
 
-Here is a video of gameplay you can view.
+Here is a video playthrough of each level. 
+
+{{<video https://www.youtube.com/embed/PER_TSR3iPc?si=aTIk5BgaFVC6qMd1>}}
+
+Check out how data are tracked in real time.
+
+{{<video data_tracking_lvl_10_video.mp4>}}
 
 ## Model
 
