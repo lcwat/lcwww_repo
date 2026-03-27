@@ -42,7 +42,7 @@ options(digits = 3, width = 120,
         knitr.kable.NA = "")
 ```
 
-Model fit with the brms package in R version 4.5.1. Visualization were completed using the ggplot2, tidybayes, bayesplot, and marginaleffects packages. 
+Model was fit with the brms package in R version 4.5.1. Visualization were completed using the ggplot2, tidybayes, bayesplot, and marginaleffects packages. 
 
 ```{r}
 
@@ -63,7 +63,7 @@ b4.1 <- read_rds('b4.1.rds')
 
 ```
 
-Here is the model summary.
+#### Model summary
 
 ```{r}
 print(b4.1)
@@ -124,7 +124,9 @@ predictions(
   facet_wrap(~ level)
 ```
 
-Here is a posterior predictive check to validate the model fit.
+#### Posterior Predictive Check
+
+Here is a posterior predictive check to validate the model fit to the original data by level.
 
 ```{r fig_height=8}
 yrep <- posterior_predict(b4.1, ndraws = 500)

@@ -1,5 +1,6 @@
 ---
 title: "Supplemental Materials"
+author: ""
 listing:
   - id: sm_2026
     contents: sm_2026.yml

@@ -44,7 +44,7 @@ website:
     
     right:
       - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
-        href: "mailto:lcwatson@ksu.edu"
+        href: mailto:lcwatson@ksu.edu
       - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
         href: https://github.com/lcwat
         rel: me

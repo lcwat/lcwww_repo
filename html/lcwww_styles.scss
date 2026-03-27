@@ -85,7 +85,7 @@ body {
 
 .sm {
     .quarto-title-banner {
-      background-image: none;
+      background-image: none !important;
       background-color: $light-green;
     }
 }
@@ -142,6 +142,38 @@ td code.sourceCode {
 .sidebar nav[role="doc-toc"]>ul li a {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+}
+
+// supplemental-materials categories
+#quarto-margin-sidebar {
+    .quarto-listing-category-title {
+        margin-left: 0.5em;
+    }
+
+    .quarto-listing-category {
+        font-family: $toc-font-family;
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 1.1;
+        padding-left: 0.6rem;
+        margin-left: 0.5em;
+        border-left: 1px solid $gray-200;
+
+        .category {
+            padding-bottom: 0.5rem;
+        }
+
+        .active {
+            font-weight: 400;
+            color: $gold;
+        }
+
+        .quarto-category-count {
+            font-weight: 200;
+            font-size: 0.8em;
+            color: $gray-900;
+        }
+    }
 }
 
 .nav-footer {
@@ -395,5 +427,18 @@ td code.sourceCode {
                 font-size: 0.85em;
             }
         }
+    }
+}
+
+.cv-download {
+    font-family: $headings-font-family;
+    background-color: $orange;
+    border-color: $orange;
+    color: $white;
+
+    &:hover {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
     }
 }
